@@ -181,7 +181,7 @@ afterskip={1.0ex}
   \setcounter{page}{2}
   \setcounter{secnumdepth}{-1}
   \chapter*{\renewcommand{\baselinestretch}{1.5}\normalsize
-    {\zihao{-2}{摘 \qquad 要}}}
+    {\zihao{-2}{摘 \hspace{0.5em}\hspace{0.5em} 要}}}
   \addcontentsline{toc}{chapter}{摘要}
   \songti\zihao{-4}
   \thispagestyle{cabstract}
@@ -227,7 +227,7 @@ afterskip={1.0ex}
 }%结束部分定义
 
 % ------------目录------------%
-\ctexset { contentsname={目 \qquad 录} } 
+\ctexset { contentsname={目 \hspace{0.5em}\hspace{0.5em} 录} } 
 %\CTEXoptions[contentsname={目 \qquad 录}]
 \RequirePackage[titles,subfigure]{tocloft}
 \renewcommand{\cftdot}{$\cdot$}
@@ -295,7 +295,8 @@ afterskip={1.0ex}
   \captionnamefont{\heiti\zihao{-4}}
   \centering
   \zihao{5}
-  \caption{\heiti\zihao{-4}#1}
+  \captionnamefont{\songti\zihao{5}}
+  \caption{\songti\zihao{5}#1}
   \label{#2}
   \setlength{\tabcolsep}{5mm}{
   \begin{tabular}{#3}
@@ -328,6 +329,7 @@ afterskip={1.0ex}
     % \setcounter{figure}{2} 
     \begin{center}     
       \includegraphics[width=14.5cm]{#1}
+      \captionnamefont{\indent\songti\zihao{5}}
       \caption{\songti\zihao{5}{#2}}
       \label{#3}
     \end{center} 
@@ -339,6 +341,7 @@ afterskip={1.0ex}
     % \setcounter{figure}{2} 
     \begin{center}     
       \includegraphics[#2]{#1}
+      \captionnamefont{\indent\songti\zihao{5}}
       \caption{\songti\zihao{5}{#3}}
       \label{#4}
     \end{center}
